@@ -14,4 +14,4 @@ PUID=${PUID:-911}
 chown -R ${GS_SERVER_USER}:${GS_SERVER_USER} ${DIRECTORY_CONFIG}
 
 # Set permissions (non-recursive) on data folder
-chown ${GS_SERVER_USER}:${GS_SERVER_USER} ${DIRECTORY_DATA}
+# chown ${GS_SERVER_USER}:${GS_SERVER_USER} ${DIRECTORY_DATA}
