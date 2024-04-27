@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.19
+FROM ghcr.io/linuxserver/baseimage-ubuntu:amd64-jammy-version-54843bcc
 LABEL maintainer "shrmnk <shrmnk@users.noreply.github.com>"
 
 # Exit container if we cannot assume UID/GID
