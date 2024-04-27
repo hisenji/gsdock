@@ -8,6 +8,11 @@ DIRECTORY_DATA="/data" \
 GS_SERVER_USER=abc \
 ECHO_PREFIX="[gsdock]"
 
+RUN apt-get update && apt-get install -y bash-completion
+RUN echo 'if [ -f /etc/bash_completion ] && ! shopt -oq posix; then' >> ~/.bashrc \
+    && echo '    . /etc/bash_completion' >> ~/.bashrc \
+    && echo 'fi' >> ~/.bashrc
+
 # Download latest 64-bit release of GoodSync (Linux)
 ADD https://www.goodsync.com/download/goodsync-release-x86_64.tar.gz /tmp/goodsync-release-x86_64.tar.gz
 
